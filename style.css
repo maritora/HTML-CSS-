@@ -1,0 +1,459 @@
+body{
+    color: #000;
+    font-family: "游ゴシック",YuGothic;
+    font-size: 14px;
+    font-weight: 500;
+    display:block
+}
+body {
+    -webkit-font-smoothing: antialiased;
+}
+div{
+    display:block
+}
+img{
+    border: 0;
+    vertical-align: middle;
+}
+header{
+    display: block
+}
+/*ヘッダー*/
+.Header {
+    width: 100%;
+    position: absolute;
+}
+@media screen and (max-width: 767px){
+.Header {
+    padding-top: 15px;
+    padding-bottom: 15px;
+}}    
+@media screen and (max-width: 1080px){
+.Header {
+    background-color: #fff;
+    z-index: 10;
+}}    
+@media screen and (max-width: 1080px){
+.Header--line {
+    position: fixed !important; /*ヘッダーを固定*/
+}}
+/*ヘッダーの要素全体*/
+@media screen and (max-width: 767px){
+.Header--posi{
+    max-width: 100%;
+    margin:0 20px;
+}}
+.Header--posi{
+    display: flex;
+    justify-content: space-between;
+    margin: 0 36px 0 36px;
+    max-width: 100%;
+    position: relative;
+}
+a:-webkit-any-link{
+  cursor: pointer;  
+}
+/*スマホ用のロゴ*/
+@media screen and (max-width: 767px){
+.HeaderLogo__image--sp{
+    display: block;
+}}
+.HeaderLogo__image--sp{
+    display: none;
+    height: 16px;
+    width: auto;
+}
+/*PC用のロゴ*/
+@media screen and (max-width: 767px){
+.HeaderLogo__image--pc{
+    display: none;
+}}
+.HeaderLogo__image--pc{
+    display: block;
+    height: 20px;
+    width: auto;
+}
+img{
+    border:0;/*これの意味？*/
+    vertical-align: middle;
+}
+@media screen and (max-width: 1080px){
+.header--list{
+    overflow-y: scroll;
+    position: fixed;
+    top: 60px;
+    left: 100%;
+    width: 100%;
+    display: block;
+    padding-top: 20px;
+    padding-bottom: 75px;
+    transition: transform 0.5s;
+    z-index: 99;
+    background-color: rgba(0, 0, 0, 0.8);
+    -webkit-overflow-scrolling: touch;
+    height: 100%;
+}}
+.header--list{
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
+}
+ul{
+    list-style: none
+}
+@media screen and (max-width:1080px){
+.header--li{
+    margin-right: 0;
+}}
+.header--li{
+    margin-right: 45px;
+}
+li{
+    display:list-item;
+    text-align:match-parent;
+}
+@media screen and (max-width: 1080px){
+.header--index{
+    display:none; /*noneにするかwhiteがいいのか*/
+    margin-right:0;
+    padding:20px 0;
+}}
+.header--index{
+    display: block;
+}
+a{
+    color: #000;
+    text-decoration: none;
+}
+@media screen and (max-width: 1080px){
+.header--index>span:first-child{
+    font-size: 16px;
+    letter-spacing: 5px;
+    color: #fff;
+}}
+.header--index>span{
+    display: block;
+    font-weight: 700;
+    text-align: center;
+}
+@media screen and (max-width: 1080px){
+.header--kaunsering--botan{
+    font-size: 16px;
+    margin: 0 auto;
+    height: 60px;
+    width: 250px;
+}}
+.header--kaunsering--botan{
+    align-items: center;
+    background-color: #F79214;
+    border: none;
+    border-radius: 38px;
+    color: #fff;
+    cursor: pointer;
+    display: flex;
+    flex-direction: column;
+    font-size: 16px;
+    font-weight: 700;
+    height: 64px;
+    justify-content: center;
+    text-decoration: none;
+    text-align: center;
+    width: 100%;
+}
+/*ヘッダーここまで*/
+section {
+    display: block;
+}
+@media screen and (max-width: 767px){
+.top{
+    background-image:none;
+    padding-top: 0;
+    padding-bottom: 35px;
+}}
+.top{
+    background-image:url(https://camp.potepan.com/wp-content/themes/potepancamp/assets/images/home/first-view/top-hero.jpg);
+    background-size: cover;
+    background-position: center;
+    padding-top: 100px;
+    padding-bottom: 28px;
+}
+@media screen and (max-width: 767px){
+.kenjikun--sp{
+    display:block;
+}}
+.kenjikun--sp{
+    display: none;
+}
+.kenjikun{
+    width:100%;
+}
+/*真ん中の最短〜※の小さい文字までのブロック*/
+@media screen and (max-width: 767px){ 
+.top--block{ 
+    margin-top:-45vw;
+}}
+@media screen and (max-width: 767px){
+.top--block{
+    max-width:none;
+    padding-left:20px;
+    padding-right:20px;
+}}
+.top--block{
+    max-width: 1140px;
+    padding-left: 50px;
+    padding-right: 50px;
+    margin-left:auto;
+    margin-right:auto;
+    position:relative;
+}
+/*最短〜無料カウンセリングボタンのブロック*/
+@media screen and (max-width: 767px){ 
+.top--pr{ 
+    margin-bottom:20px;
+    width:100%;
+}}
+.top--pr{
+    margin-bottom:70px;
+    width: fit-content;
+}
+/*最短５ヶ月間で未経験からWebエンジニアへ*/
+@media screen and (max-width: 767px){
+.pr{ 
+    font-size: 25px;
+    line-height: 36px;
+    margin-left: calc(((100vw - 100%) / 2) * -1);
+    margin-right: calc(((100vw - 100%) / 2) * -1);
+}}
+.pr{
+    color: #000;
+    font-family: 'Lato', sans-serif;
+    font-size: 38px;
+    font-weight: 700;
+    line-height: 54px;
+    margin-bottom: 15px;
+    text-align: center;
+}
+h2{
+    font-size: 1.5em;
+    font-weight: bold;
+}
+/*3つの丸いの*/
+@media screen and (max-width: 767px){
+.prpoint {
+    display: flex;
+    justify-content: space-between;/*端合わせて均等に配置*/
+    margin-bottom: 30px;
+    width: 100%;
+}}
+.prpoint {
+    margin-bottom: 25px;
+}
+@media screen and (max-width: 767px){
+.prpoint img {
+    width: 27.5%;
+}}
+.prpoint{
+    margin-right: 8px;
+}
+/*無料カウンセリングはこちらボタン*/    
+@media screen and (max-width: 767px){
+.kaunsering--botan{    
+    flex-direction: column; /*積み重なるように配置する*/
+}}
+.kaunsering--botan{ 
+    display: flex;
+}
+@media screen and (max-width: 767px){
+.kaunsering--botan a:first-of-type {
+    margin-right: 0;
+}}
+.kaunsering--botan a:first-of-type {
+    margin-right: 15px;
+    width: 306px;
+}
+@media screen and (max-width: 767px){
+.kaunsering--botan a{
+    font-size: 14px;
+    width: 100% !important;
+}}
+.kaunsering--botan a{
+    align-items: center;
+    background-color: #F79214;
+    border: none;
+    border-radius: 38px;
+    color: #fff;
+    cursor: pointer;
+    display: flex;
+    flex-direction: column;
+    font-size: 16px;
+    font-weight: 700;
+    height: 64px;
+    justify-content: center;
+    text-decoration: none;
+    text-align: center;
+    width: 100%;
+}
+@media screen and (max-width: 767px){
+.kaunsering--botan a:last-of-type {
+    display: none;
+}}
+.kaunsering--botan a:last-of-type {
+    background-color: #fff;
+    border: 1px solid #E0E0E0;
+    color: #000;
+    width: 176px;
+}
+/*※の小さい文字*/
+.hosoku{
+    color: #A2A2A4;
+    font-size: 12px;
+}
+p{
+    line-height: 1.5;
+}
+/*白い部分ここまで*/
+/*オレンジ大枠*/
+@media screen and (max-width: 767px){
+.about--haikei{
+    padding: 30px 0;
+}}
+.about--haikei{
+    padding: 110px 0;
+    background-color: #F79214;
+}
+/*オレンジcontent含め中身*/
+@media screen and (max-width: 1024px){
+.about--in{
+    flex-direction: column;
+}}
+@media screen and (max-width: 767px){
+.about--in{
+    max-width: none;
+    padding-left: 20px;
+    padding-right: 20px;
+}}
+.about--in{
+    max-width: 1140px;
+    padding-left: 50px;
+    padding-right: 50px;
+    margin-left: auto;
+    margin-right: auto;
+    position: relative;
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
+}
+/*白い文字部分*/
+@media screen and (max-width: 1024px){
+.about--moji{
+    margin-bottom: 0;
+    width: 100%;
+}}
+@media screen and (max-width: 767px){
+.about--moji{
+    margin-bottom: 45px;
+}}
+.about--moji{
+    align-items: center;
+    display: flex;
+    flex-direction: column; /*スタート位置主軸*/
+    margin-bottom: 60px;
+    width: 100%;
+    align-items: flex-start;
+    margin-bottom: 0;
+    width: 53%;
+}
+/*POTEPAN CAMPとは*/
+@media screen and (max-width: 767px){
+.about--moji h2{
+    font-size: 30px !important;
+    text-align: center;
+    line-height: 1.2;
+}}
+.about--moji h2{
+    color: #fff;
+    font-family:'Lato',sans-serif;
+    letter-spacing: 1px;
+    width: 100%;
+    font-size: 46px;
+    line-height: 74px;
+}
+.about--moji h2,.about--moji p {
+    color: #fff;
+    text-align: left;
+}
+@media screen and (max-width: 767px){
+.about--moji h2>span{
+    font-size: 33px;
+    letter-spacing: 1px;
+}}
+.about--moji h2>span{
+    font-size: 50px;
+    font-family: 'Lato', sans-serif;
+    font-weight: 900;
+}
+@media screen and (max-width: 767px){
+.about--moji h2 span {
+    font-size: 30px;
+    letter-spacing: 1px;
+}}
+.about--moji h2 span{
+    font-size: 50px;
+    font-weight: 900;
+}
+@media screen and (max-width: 767px){
+.about--moji br{
+    display: block;
+}}
+.about--moji br {
+    display: none;
+}
+.about--moji p {
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 26px;
+    margin-top: 15px;
+    color: #fff;
+    text-align: left;
+    display: inline-block;
+}
+@media screen and (max-width: 767px){
+    .about--moji p {
+    font-size: 16px;
+    line-height: 21px;
+}}
+/*CONTENTボタン*/
+@media screen and (max-width: 1024px){
+.icon--content{
+    margin-top: 40px;
+}}
+.icon--content{
+    width: 250px;
+}
+.icon--content a {
+    align-items: center;
+    background-color: #fff;
+    border: none;
+    border-radius: 38px;
+    color: #F79214;
+    cursor: pointer;
+    display: flex;
+    flex-direction: column;
+    font-size: 16px;
+    font-weight: 700;
+    height: 64px;
+    justify-content: center;
+    text-decoration: none;
+    text-align: center;
+    width: 100%;
+}
+.icon--content a span:first-child {
+    font-family: 'Lato', sans-serif;
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 32px;
+}
+.icon--content a span:last-child {
+    font-size: 12px;
+    line-height: 18px;
+}
