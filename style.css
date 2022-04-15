@@ -51,7 +51,11 @@ header{
     position: relative;
 }
 a:-webkit-any-link{
-  cursor: pointer;  
+  cursor: pointer;
+  transition: 1.0s ;
+}
+a:-webkit-any-link:hover{
+  opacity:0.5;
 }
 /*スマホ用のロゴ*/
 @media screen and (max-width: 767px){
@@ -74,7 +78,7 @@ a:-webkit-any-link{
     width: auto;
 }
 img{
-    border:0;/*これの意味？*/
+    border:0;
     vertical-align: middle;
 }
 @media screen and (max-width: 1080px){
@@ -114,7 +118,7 @@ li{
 }
 @media screen and (max-width: 1080px){
 .header--index{
-    display:none; /*noneにするかwhiteがいいのか*/
+    display:none; 
     margin-right:0;
     padding:20px 0;
 }}
@@ -164,41 +168,41 @@ a{
 section {
     display: block;
 }
-@media screen and (max-width: 767px){
-.top{
+@media screen and (max-width:767px){
+.FirstView{
     background-image:none;
     padding-top: 0;
     padding-bottom: 35px;
 }}
-.top{
+.FirstView{
     background-image:url(https://camp.potepan.com/wp-content/themes/potepancamp/assets/images/home/first-view/top-hero.jpg);
     background-size: cover;
     background-position: center;
     padding-top: 100px;
     padding-bottom: 28px;
 }
-@media screen and (max-width: 767px){
-.kenjikun--sp{
+@media screen and (max-width:767px){
+.FirstView__main-image--sp{
     display:block;
 }}
-.kenjikun--sp{
+.FirstView__main-image--sp{
     display: none;
 }
-.kenjikun{
+.FirstView__main-image{
     width:100%;
 }
 /*真ん中の最短〜※の小さい文字までのブロック*/
 @media screen and (max-width: 767px){ 
-.top--block{ 
+.FirstView--block{ 
     margin-top:-45vw;
 }}
 @media screen and (max-width: 767px){
-.top--block{
+.FirstView--block{
     max-width:none;
     padding-left:20px;
     padding-right:20px;
 }}
-.top--block{
+.FirstView--block{
     max-width: 1140px;
     padding-left: 50px;
     padding-right: 50px;
@@ -208,11 +212,11 @@ section {
 }
 /*最短〜無料カウンセリングボタンのブロック*/
 @media screen and (max-width: 767px){ 
-.top--pr{ 
+.FirstView--pr{ 
     margin-bottom:20px;
     width:100%;
 }}
-.top--pr{
+.FirstView--pr{
     margin-bottom:70px;
     width: fit-content;
 }
@@ -359,9 +363,6 @@ p{
     flex-direction: column; /*スタート位置主軸*/
     margin-bottom: 60px;
     width: 100%;
-    align-items: flex-start;
-    margin-bottom: 0;
-    width: 53%;
 }
 /*POTEPAN CAMPとは*/
 @media screen and (max-width: 767px){
